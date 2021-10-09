@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="http://bootswatch.com/5/zephyr/bootstrap.min.css"
+    />
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <title>Book List</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-primary"></i
+        ><strong> My<span class="text-primary">Book</span>List</strong>
+      </h1>
+      <form id="book-form">
+        <div class="form-group mt-3">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control" />
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control" />
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="isbn">ISBN#</label>
+          <input type="text" id="isbn" class="form-control" />
+        </div>
+        
+
+        <div class="d-grid mt-3 gap-2">
+                <button type="submit" class="btn btn-lg btn-primary" >Block button</button>
+              </div>
+      </form>
+      <table class="table table-hover mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">ISBN#</th>
+            <th class="text-end">Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list">
+        </tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
