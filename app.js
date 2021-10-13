@@ -25,7 +25,7 @@ class UI {
         <td class="title">${book.title}</td>
         <td class="author">${book.author}</td>
         <td class="isbn">${book.isbn}</td>
-        <td class="text-end"><a href="#" class="btn btn-info btn-sm btn-primary edit">Edit</a>
+        <td class="text-end"><a href="#" class="btn btn-sm btn-primary edit">Edit</a>
         <a href="#" class="btn btn-danger btn-sm delete">X</a></td>
         `;
 
