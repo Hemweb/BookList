@@ -123,7 +123,7 @@ class UI {
     static showAlert(message, className){
         const div = document.createElement('div');
         const alert = document.querySelector('.alertDiv');
-        div.className = `alert alert-${className}`;
+        div.className = `alert alert-${className} sm alert-sm`;
         div.appendChild(document.createTextNode(message));
 //         const container = document.querySelector('.container');
 //         const form = document.querySelector('#book-form');
