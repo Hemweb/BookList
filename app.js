@@ -22,10 +22,10 @@ class UI {
         const row = document.createElement('tr');
 
         row.innerHTML = `
-        <td class="title">${book.title}</td>
-        <td class="author">${book.author}</td>
-        <td class="isbn">${book.isbn}</td>
-        <td class="text-end"><a href="#" class="btn btn-sm btn-primary edit">Edit</a>
+        <td scope="col" class="title">${book.title}</td>
+        <td scope="col" class="author">${book.author}</td>
+        <td scope="col" class="isbn">${book.isbn}</td>
+        <td scope="col" class="text-end"><a href="#" class="btn btn-sm btn-primary edit">Edit</a>
         <a href="#" class="btn btn-danger btn-sm delete">X</a></td>
         `;
 
